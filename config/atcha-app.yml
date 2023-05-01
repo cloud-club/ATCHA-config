@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atcha-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: atcha-app
+  template:
+    metadata:
+      labels:
+        app: atcha-app
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+      - name: atcha-app
+        image: atchaacr.azurecr.io/atcha-app:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 80
