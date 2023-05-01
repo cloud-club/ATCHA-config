@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: atcha-secret
+type: Opaque
+data:
+  SLACK_CHANNEL: QzA0VkE0MlNYMDg=
+  SLACK_TOKEN: eG94Yi00OTY5NTA1ODg4OTk3LTUxODUzNTk5NjI5MTgtQ2FkUnlVRVRndXFUYkRlUzh6d1B1a1hn
