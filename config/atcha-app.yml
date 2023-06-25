@@ -27,11 +27,6 @@ spec:
         ports:
         - containerPort: 80
         env:
-        - name: SLACK_CHANNEL
-          valueFrom:
-            secretKeyRef:
-              name: atcha-secret
-              key: SLACK_CHANNEL
         - name: SLACK_TOKEN
           valueFrom:
             secretKeyRef:
