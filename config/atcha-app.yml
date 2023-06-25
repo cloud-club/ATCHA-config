@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: atcha-app
-        image: acratcha.azurecr.io/atcha:70
+        image: acratcha.azurecr.io/atcha:71
         resources:
           requests:
             cpu: 100m
